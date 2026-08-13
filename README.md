@@ -224,7 +224,8 @@ The **Transformer** architecture, introduced in *"Attention Is All You Need"* (V
 ```
 
 **Key Concepts:**
-- **Self-Attention:** $	ext{Attention}(Q, K, V) = 	ext{softmax}\left(rac{QK^T}{\sqrt{d_k}}ight)V$
+- **Self-Attention:** $	ext{Attention}(Q, K, V) = 	ext{softmax}\left(rac{QK^T}{\sqrt{d_k}}
+ight)V$
 - **Multi-Head Attention:** Projects Q, K, V into $h$ different subspaces, allowing the model to attend to information from different representation spaces simultaneously.
 - **Positional Encoding:** Injects sequence order information since the architecture itself is permutation-invariant: $PE_{(pos, 2i)} = \sin(pos / 10000^{2i/d_{model}})$
 - **Layer Normalization:** Normalizes across the feature dimension, stabilizing training of very deep networks.
